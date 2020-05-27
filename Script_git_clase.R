@@ -61,8 +61,6 @@ ggplot(df, aes(x= total_bill, y=tip, color=sex))+
 # Se puede hacer, no es recomendable versionar png.
 
 # Hago un commit (Exactamente el mismo proceso)
-# (Notar que en mi caso, le puse commit, se guardó historia pero no versionado de imagen porque yo
-#  en git.ignore le había puesto que no me guardara .png, Entonces modifiqué git.ignore y ahora sí lo versioné)
 # Voy a historia y veo que se me generó otro hito
 
 # Cierro y sigo modificando código:
@@ -73,3 +71,15 @@ ggplot(df, aes(x= total_bill, y=tip, color=sex))+
   labs(title = 'hola')
 
 # Guardo script (discket)
+
+# Notar que Cuando lo guardo, en la solapa git aparece el nombre del script con status = M
+# Este archivo ya estaba guardado pero lo modifiqué, entonces lo tengo que pasar de nuevo a staged
+# Y lo commiteo 
+# De nuevo, voy a la historia y me paro sobre los cambios 
+
+# Sigo con otro cambio:
+df$tip_pes=df$tip*5
+# Guardo script y lo commiteo
+
+
+## Voy a viajar en el tiempo. De primer commit al ultimo hubo cambio en el codigo (no voy a viajar en el versionado de la imagen porque ahi no hay codigo)
