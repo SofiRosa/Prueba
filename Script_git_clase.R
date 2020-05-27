@@ -79,7 +79,14 @@ ggplot(df, aes(x= total_bill, y=tip, color=sex))+
 
 # Sigo con otro cambio:
 df$tip_pes=df$tip*5
-# Guardo script y lo commiteo
+# Guardo script y lo commiteo (idem que anterior)
 
 
-## Voy a viajar en el tiempo. De primer commit al ultimo hubo cambio en el codigo (no voy a viajar en el versionado de la imagen porque ahi no hay codigo)
+## Voy a viajar en el tiempo. La cotizacion estaba mal
+#  Abajo de solapa git > engranage > Shell > Aparece consola
+# Escribo : git checkout 
+# Seguido de codigo id de hito (SHA): 4868bbd8
+# Seguido de nombre de archivo: Script_git_clase.R
+## Cuando lo ejecuto, notar que en la consola se me desaparece lo que había escrito,
+## Es como volver el tiempo atrás y cambie el codigo.
+
