@@ -36,4 +36,40 @@ library(reshape2)
 # Se abre ventana:
 
 
-# Me dice que tengo 5 lineas de codigo
+# Aparece que tengo 5 lineas de código.
+# Puedo seleccionar que quiero tildar para commitear. En este caso todo.
+# Además dejo el mensaje del commit.
+# > Hago commit y close
+
+# Si apreto botón de historia me muestra:
+#     Que fue lo que se hizo
+#     Quien lo hizo
+#     Cuando lo hizo
+#     el ID > Identifica cada cambio que se fue haciendo.
+
+# Cierro y sigo codeando
+
+df = tips
+ggplot(df, aes(x= total_bill, y=tip, color=sex))+
+  geom_point()
+
+# Voy a guardar esa imagen > Export (arriba de imagen) > save as image > Que lo guarde en la misma carpeta (directorio en donde vengo trabajando)
+
+# Si vuelvo a guardar mi git (solapa git), me aparece para guardarlo. 
+# >>> ¿Por qué aparece disponible para guardarlo?
+# >>> Porque cuando hice el git.ignore, le dije que no versione ni jpg ni pdf, entonces png lo va a versionar
+# Se puede hacer, no es recomendable versionar png.
+
+# Hago un commit (Exactamente el mismo proceso)
+# (Notar que en mi caso, le puse commit, se guardó historia pero no versionado de imagen porque yo
+#  en git.ignore le había puesto que no me guardara .png, Entonces modifiqué git.ignore y ahora sí lo versioné)
+# Voy a historia y veo que se me generó otro hito
+
+# Cierro y sigo modificando código:
+
+df = tips
+ggplot(df, aes(x= total_bill, y=tip, color=sex))+
+  geom_point() +
+  labs(title = 'hola')
+
+# Guardo script (discket)
