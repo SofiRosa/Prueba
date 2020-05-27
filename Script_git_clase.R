@@ -90,3 +90,19 @@ df$tip_pes=df$tip*5
 ## Cuando lo ejecuto, notar que en la consola se me desaparece lo que había escrito,
 ## Es como volver el tiempo atrás y cambie el codigo.
 
+
+
+## Como hacer push desde Rstudio a mi carpeta de Git.
+## Una vez que tengo repositorio remoto, desde Rstudio sincronizar el proyecto y decirle que
+##los push que haga, los haga sobre ese repositorio.
+# Copio la url de mi repo/proyecto en github
+# Abro shell, escribo : git remote add origen (+ el link) > enter > Ahi quedaron sincronizadas.
+
+# La primera vez que se haga, va a pedir el usuario y la clave
+# Una vez que ya queden sincronizadas, ya sabe que ese proyecto va a hacer push sobre esa carpeta.
+
+# Ahora hace en shell: git push origin master -f
+# Pide el usuario,
+# Voy a mi repo en github
+# Notar que pisa todo lo que había en la carpeta (el readme debería bajarlo en mi carpeta entonces )
+
